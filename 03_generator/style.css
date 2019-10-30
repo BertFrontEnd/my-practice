@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p, input, main {
+    margin: 10px;
+}
+
+p {
+    display: inline-block;
+    width: 150px;
+}
+
+main {
+    width: 500px;
+    height: 100px;
+    background-color: blue;
+}

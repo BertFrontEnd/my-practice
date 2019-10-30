@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+section {
+    margin: 15px;
+}
+
+select, input, p, div {
+    margin-top: 15px;
+}
+
+div {
+    width: 10px;
+    height: 30px;
+    background-color: blue;
+}

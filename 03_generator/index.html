@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>#1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <section>
+      <p>Верхний левый угол</p>
+      <input type="range" id="rangeLeftTop" min="0" max="100" value="0" oninput="changeRange()"/>
+      <input type="text" id="textLeftTop" value="0" onchange="changeText()"/>
+    </section>
+    <section>
+      <p>Верхний правый угол</p>
+      <input type="range" id="rangeRightTop" min="0" max="100" value="0" oninput="changeRange()"/>
+      <input type="text" id="textRightTop" value="0" onchange="changeText()"/>
+    </section>
+    <section>
+      <p>Нижний правый угол</p>
+      <input type="range" id="rangeRightBottom" min="0" max="100" value="0" oninput="changeRange()"/>
+      <input type="text" id="textRightBottom" value="0" onchange="changeText()"/>
+    </section>
+    <section>
+      <p>Нижний левый угол</p>
+      <input type="range" id="rangeLeftBottom" min="0" max="100" value="0" oninput="changeRange()"/>
+      <input type="text" id="textLeftBottom" value="0" onchange="changeText()"/>
+    </section>
+    <main></main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
