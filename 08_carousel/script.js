@@ -3,17 +3,17 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides((slideIndex += n));
+  showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides((slideIndex = n));
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
   let i;
-  const slides = document.querySelectorAll('.mySlider');
-  const dots = document.querySelectorAll('.dot');
+  const slides = document.querySelectorAll('.mySlides');
+  const MyDots = document.querySelectorAll('.dot');
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -21,11 +21,11 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].getElementsByClassName.display = 'none';
+    slides[i].style.display = 'none';
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace('active', '');
+  for (i = 0; i < MyDots.length; i++) {
+    MyDots[i].className = MyDots[i].className.replace('active', '');
   }
   slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className = 'active';
+  MyDots[slideIndex - 1].className += ' active';
 }
