@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: sans-serif;
+}
+.calc {
+  width: 270px;
+  margin: 30px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: gray;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+button,
+input {
+  border-radius: 5px;
+  box-shadow: none;
+  color: #000;
+  background-color: #fff;
+}
+
+input {
+  padding: 5px;
+}
