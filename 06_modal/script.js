@@ -17,7 +17,7 @@ close.onclick = function() {
 
 window.onclick = function(e) {
   if (e.target == myModal) {
-    myModal.style.display = "none";
+    myModal.style.display = 'none';
     console.log(myModal);
   }
 };

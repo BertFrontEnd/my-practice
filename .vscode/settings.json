@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "whiteBorder"
-    ]
+    ],
+    "prettier.jsxSingleQuote": true
 }

@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Modal image</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="myBtn">Open Modal Window</button>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Modal Window</p>
-      </div>
+    <img src="img/spaceship.jpg" alt="Star Ship" id="imgMin" />
+    <div id="modalWin" class="modal">
+      <span class="close">&times</span>
+      <img class="modal-content" id="imgFull" />
+      <div id="caption"></div>
     </div>
     <script src="script.js"></script>
   </body>
