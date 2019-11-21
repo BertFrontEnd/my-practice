@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 10px;
+  font-family: sans-serif;
+}
+
+#myProgress {
+  position: relative;
+  width: 400px;
+  height: 30px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#myBar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#label {
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+}
+
+button {
+  padding: 5px 15px;
+}
