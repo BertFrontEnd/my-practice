@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 15px;
+}
+
+button.accordion {
+  background-color: #d1d3d5;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  height: 50px;
+  transition: 0.4s;
+}
+
+button.accordion.active,
+button.accordion:hover {
+  background-color: #9ca0a4;
+}
+
+section.panel {
+  padding: 0 18px;
+  background-color: #374047;
+  color: #fff;
+  display: none;
+  height: 50px;
+  line-height: 50px;
+}
+
+section.panel.show {
+  display: block;
+  transition: 0.4s;
+}
