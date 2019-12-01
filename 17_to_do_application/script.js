@@ -30,12 +30,29 @@ addBtn.onclick = function newElement() {
   let inputValue = document.querySelector('#myInput').value;
   let myTextValue = document.createTextNode(inputValue);
   li.appendChild(myTextValue);
+
   if (inputValue === '') {
     alert('Please, add the Task!');
   } else {
     document.querySelector('#myUl').appendChild(li);
   }
+
   document.querySelector('#myInput').value = '';
+
+  let span = document.createElement('span');
+  let txt = document.createTextNode('\u00D7');
+  span.className = 'close';
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  const close = document.querySelectorAll('.close');
+
+  for (let i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      let elem = this.parentNode;
+      elem.style.display = 'none';
+    };
+  }
 };
 
 const list = document.querySelector('ul');
@@ -43,22 +60,9 @@ console.log(list);
 list.addEventListener(
   'click',
   function(e) {
-    if (e.target.tagName === 'li') {
-      e.target.className.toggle('checked');
+    if (e.target.tagName === 'LI') {
+      e.target.classList.toggle('checked');
     }
   },
   false
 );
-
-/* document.querySelector('ul').onclick = function(e) {
-  const target = e.target;
-  if (target.tagName == 'li') {
-    for (let i = 0; i < li.length; i++) {
-      if (target == li[i]) {
-        target.className.toggle('checked');
-        console.log(list);
-        break;
-      }
-    }
-  }
-}; */

@@ -18,7 +18,7 @@ ul li {
   user-select: none;
 }
 
-ul li:nth-child(add) {
+ul li:nth-child(odd) {
   background: #f9f9f9;
 }
 
@@ -71,6 +71,7 @@ input {
   padding: 10px;
   float: left;
   font-size: 16px;
+  margin-top: 5px;
 }
 
 .addBtn {
@@ -82,7 +83,8 @@ input {
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
+  margin-top: 5px;
 }
 
 .addBtn:hover {
